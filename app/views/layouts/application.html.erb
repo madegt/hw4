@@ -47,15 +47,19 @@
             <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
           <% end %>
 
-          <li class="nav-item">
-            <a href="/places/new/" class="btn btn-success">New Place</a>
-          </li>
+          
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container mt-3">
+  <div class="container">
+    <div class="d-flex justify-content-between mb-3">
+      <a href="/places/new/" class="btn btn-success">New Place</a>
+    </div>
+  </div>
+
+  <div class="container mt-12">
     <% if flash["notice"] != nil %>
       <div class="alert alert-primary">
         <%= flash["notice"] %>
